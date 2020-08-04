@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>:: 코딩리스트 ::</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta id="viewport" name="viewport" content="width=350, user-scalable=yes, target-densitydpi=device-dpi" />
+	<link rel="stylesheet" type="text/css" href="./common/css/global.css" />
+	<script type="text/javascript" src="./common/js/jquery-1.12.4.min.js"></script>
+	<style type="text/css">
+	<!--
+	body {line-height:20px; }
+	//-->
+	</style>
+</head>
+<body>
+	<div id="wrap" class="r">
+		<div id="left">
+			<div id="container">
+				<div id="header">
+					<div class="btns">
+						<a href="#self" id="btn_d">새창 확인형</a>
+						<a href="#self" id="btn_r" class="on">리뷰형</a>
+						<!-- <a href="#self" id="btn_m">모바일</a> -->
+					</div>
+
+					<h1><span class="project"></span> 마크업 리스트 <span class="version"></span></h1>
+
+				</div>
+
+				<div id="tree">
+					<ul>
+						<li>
+							<a href="#self">공통</a>
+							<ul>
+								<li class="step4"><a href="./page/login.html">로그인</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#self">Product</a>
+							<ul>
+								<li class="step4"><a href="./page/product_list.html">Product list</a></li>
+								<li class="step4"><a href="./page/product_view_login.html">Product view login</a></li>
+								<li class="step4"><a href="./page/product_view.html">Product view</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="right">
+			<iframe frameborder="0" id="iFrame" name="iFrame" src="" ></iframe>
+		</div>
+	</table>
+<style type="text/css">
+html, body {width:100%; height:100%; font-size:13px; color:#333;}
+#wrap {width:100%; height:100%; position:relative; overflow:hidden;}
+
+#left {width:100%; height:100%; vertical-align:top; overflow-y:scroll;}
+#right {width:0; height:100%; overflow:hidden; position:absolute; top:0; right:0;}
+
+#container {padding:20px;}
+
+#header {margin-bottom:20px; position:relative;}
+#header h1 {margin-bottom:10px; font-size:18px;}
+#header h1 .project {color:#d3562a;}
+#header h1 .version {font-size:13px; color:#999;}
+#header .step {width:100%; overflow:hidden;}
+#header .step dt {float:left; line-height:22px; margin-right:5px;}
+#header .step dd {float:left;}
+#header .step dd br {display:none;}
+#header .step dd span {display:inline-block; height:22px; padding:0 5px; margin-right:5px; border-radius:3px; box-sizing:border-box; font-weight:700;}
+#header .step dd span.step1 {border:1px solid #ff9900; color:#ff9900;}
+#header .step dd span.step2 {border:1px solid #ff9900; color:#ffffff; background:#ff9900;}
+#header .step dd span.step3 {border:1px solid #39b54a; color:#39b54a;}
+#header .step dd span.step4 {border:1px solid #39b54a; color:#ffffff; background:#39b54a;}
+#header .btns {position:absolute; top:3px; right:0;}
+#header .btns a {display:inline-block; height:22px; padding:0 5px; border-radius:3px; box-sizing:border-box; font-weight:700; border:1px solid #000; background:#fff; color:#000;}
+#header .btns a.on {background:#000; color:#fff;}
+
+#tree {}
+
+#iFrame {width:100%; height:100%; overflow-x:hidden;}
+
+#tree {}
+#tree > ul {}
+#tree > ul > li {margin-bottom:10px; border-top:1px solid #333;}
+#tree > ul > li > a {display:block; font-weight:700; padding:0 0 0 8px; font-size:13px; line-height:30px; color:#000; background:#eee; border-width:1px 0 1px;}
+#tree > ul > li > ul {border-top:1px solid #ccc;}
+#tree > ul > li > ul > li {border-bottom:1px solid #ccc;}
+#tree > ul > li > ul > li > a {display:inline-block; padding:3px 8px; color:#666; vertical-align:top;}
+#tree > ul > li > ul > li > span {display:inline-block; color:#999; margin-left:10px; vertical-align:top; line-height:28px;}
+#tree > ul > li > ul > li > a:before {display:inline-block; height:22px; padding:0 5px; margin-right:10px; border-radius:3px; box-sizing:border-box; font-weight:700; vertical-align:top;}
+#tree > ul > li > ul > li.step1 > a {}
+#tree > ul > li > ul > li.step2 > a {}
+#tree > ul > li > ul > li.step3 > a {cursor:default;}
+#tree > ul > li > ul > li.step4 > a {}
+#tree > ul > li > ul > li.step4:hover > a {color:#39b54a; font-weight:700;}
+#tree > ul > li > ul > li.step4 > a.on {color:#39b54a; font-weight:700;}
+#tree > ul > li > ul > li.step1 > a:before {content:'디자인 진행'; border:1px solid #ff9900; color:#ff9900; background:#ffffff;}
+#tree > ul > li > ul > li.step2 > a:before {content:'디자인 완료'; border:1px solid #ff9900; color:#ffffff; background:#ff9900;}
+#tree > ul > li > ul > li.step3 > a:before {content:'마크업 진행'; border:1px solid #39b54a; color:#39b54a; background:#ffffff;}
+#tree > ul > li > ul > li.step4 > a:before {content:'마크업 완료'; border:1px solid #39b54a; color:#ffffff; background:#39b54a;}
+
+#wrap.r {width:auto; padding-left:300px;}
+
+#wrap.r #left {width:300px; position:absolute; top:0; left:0;}
+#wrap.r #right {width:100%; border-left:1px solid #ccc; position:static;}
+
+#wrap.r #container {padding:20px 10px;}
+
+#wrap.r #header .btns {position:static; margin-bottom: 10px; }
+#wrap.r #header h1 .version {display:block;}
+#wrap.r #header .step {text-align:center;}
+#wrap.r #header .step dt {text-align:left;}
+#wrap.r #header .step dd {}
+#wrap.r #header .step dd br {display:block;}
+#wrap.r #header .step dd span {margin-bottom:5px;}
+
+#wrap.r #tree > ul > li {margin-bottom:20px;}
+#wrap.r #tree > ul > li > ul > li > span {display:none;}
+#wrap.r #tree > ul > li > ul > li > a {display:block; background:#fff;}
+#wrap.r #tree > ul > li > ul > li.step3 > a {}
+#wrap.r #tree > ul > li > ul > li.step4 > a {}
+#wrap.r #tree > ul > li > ul > li.step4:hover > a {color:#333; font-weight:700;}
+#wrap.r #tree > ul > li > ul > li > a:before {content:''; height:12px; margin-right:6px; padding:0 5px; position:relative; top:4px;}
+
+#wrap.m {width:auto; padding-left:780px;}
+#wrap.m #iFrame {}
+#wrap.m #left {width:100%;}
+#wrap.m #right {width:780px; position:absolute; top:0; left:0; border-right:1px solid #ccc;}
+</style>
+
+<script>
+(function(){
+	var $tree = $('#tree'),
+		$depth1 = $('#tree > ul > li > a'),
+		$step = $('#tree > ul > li > ul > li'),
+		$depth2 = $('#tree > ul > li > ul > li > a');
+
+	var stepTarget = function(_target){
+		$step.each(function(){
+			if($(this).hasClass('step3')){
+				$(this).children('a').attr('target','_self');
+			}else if($(this).hasClass('step4')){
+				$(this).children('a').attr('target',_target);
+			}
+		});
+	}
+
+	stepTarget('iFrame');
+
+	$depth2.each(function(i){
+		var href = $(this).attr('href');
+
+		$(this).parent().append('<span>'+href+'</span>');
+	});
+
+	$depth2.bind('click',function(){
+		$depth2.removeClass('on');
+		$(this).addClass('on');
+	});
+
+	$('#btn_d').click(function(){
+		$(this).siblings().removeClass('on');
+		$(this).addClass('on');
+		$('#wrap').removeClass();
+		$('#iFrame').attr('src','');
+		stepTarget('_blank');
+	});
+
+	$('#btn_r').click(function(){
+		$(this).siblings().removeClass('on');
+		$(this).addClass('on');
+		$('#wrap').removeClass();
+		$('#wrap').addClass('r');
+		$('#iFrame').attr('src','');
+		stepTarget('iFrame');
+	});
+
+	$('#btn_m').click(function(){
+		$(this).siblings().removeClass('on');
+		$(this).addClass('on');
+		$('#wrap').removeClass();
+		$('#wrap').addClass('m');
+		$('#iFrame').attr('src','');
+		stepTarget('iFrame');
+	});
+
+	$depth1.click(function(){
+		$(this).next().toggle();
+	});
+})();
+</script>
+</body>
+</html>
